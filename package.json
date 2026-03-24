@@ -1,0 +1,41 @@
+{
+  "name": "restful_api",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "dibya",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
+  },
+  "dependencies": {
+    "@prisma/client": "^6.19.2",
+    "express": "^5.2.1",
+    "uuid": "^9.0.1",
+    "zod": "^4.1.13"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.28.5",
+    "@babel/preset-typescript": "^7.28.5",
+    "@jest/globals": "^27.5.1",
+    "@types/bcrypt": "^6.0.0",
+    "@types/express": "^5.0.6",
+    "@types/jest": "^30.0.0",
+    "@types/supertest": "^6.0.3",
+    "@types/uuid": "^10.0.0",
+    "babel-jest": "^30.3.0",
+    "bcrypt": "^6.0.0",
+    "jest": "^30.3.0",
+    "prisma": "^6.19.2",
+    "supertest": "^7.1.4",
+    "ts-jest": "^29.4.6",
+    "typescript": "^5.9.3",
+    "winston": "^3.19.0"
+  }
+}
