@@ -5,10 +5,10 @@
 //     return schema.parse(data);
 //   }
 // }
-import { z } from "zod";
+import { z, ZodType } from "zod";
 
 export class Validation {
-  static validate<T extends z.ZodTypeAny>(schema: T, data: unknown): z.infer<T> {
+  static validate<T>(schema: ZodType<T>, data: unknown): T {
     return schema.parse(data);
   }
 }
