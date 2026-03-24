@@ -1,5 +1,5 @@
-Instal prisma v6 
-<br>
+<h1>Instal prisma v6</h1> 
+
 ```
 npm install prisma@6 --save-dev
 ```
