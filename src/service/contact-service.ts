@@ -6,7 +6,7 @@ import { User } from "../../generated/prisma";
 import { logger } from "../application/logging";
 
 export class ContactService {
-  static async create(request: CreateContactRequest): Promise<ContactResponse> {
+  static async create(user: User, request: CreateContactRequest): Promise<ContactResponse> {
     const createRequest = Validation.validate(ContactValidation.CREATE, request);
 
     const record = {
@@ -20,4 +20,6 @@ export class ContactService {
 
     return toContacResponse(contact);
   }
+
+  static async get
 }
